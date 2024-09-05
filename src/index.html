@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html dir="rtl" lang="fa">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,87 @@
   <link href="./output.css" rel="stylesheet">
   <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
 </head>
+
+
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+
+
+  <!-- Navbar Section including 1 main container three 3 subcontainers (hamburger menu div + ul container div + snap log div) -->
+
+
+  <!-- the main container including all menu elements -->
+  <div class="flex justify-between sm:justify-between md:flex-row-reverse">
+
+
+    <!-- div container that is hidden in screens above 480px -->
+    <div class=" p-5 sm:p-5 md:hidden">
+      <img src="./img/icons/menu_black_24dp.svg" alt="منوی همبرگری" class="md:hidden">
+    </div>
+
+
+
+    <!-- ul container that is only displayed on screens above 480px -->
+    <ul class="md:flex justify-start items-center text-center gap-5 font-iran_Light text-text_nav hidden sm:hidden md:w-4/5">
+      <!-- li tag container including menu title and dropdown box -->
+      <li class="py-8 pr-6 relative group">
+        <a href="#" class="flex justify-center items-center">
+          سوپراپ اسنپ
+          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </a>
+        
+        <!-- div container is a dropdown box inside li tag container -->
+        <div class="hidden group-hover:flex flex-col gap-4 absolute top-[80px] -right-3 border-1 border-gray-300/30 bg-white shadow-lg p-4 rounded-lg min-w-40 ">
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">درخواست تاکسی</a>
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">پیک موتوری</a>
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">سفارش آنلاین غذا</a>
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">سوپرمارکت</a>
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">رزرو بلیط هواپیما</a>
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">رزرو بلیط قطار</a>
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">رزرو بلیط اتوبوس</a>
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">رزرو هتل</a>
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">درخواست وانت بار</a>
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">خدمات اسباب کشی</a>
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">پزشک و مشاور</a>
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">اسنپ پرو</a>
+        </div>
+      </li>
+
+      <!-- li tags(menu items) without dropdown box  -->
+      <li class="py-8"><a href="#"></a>ثبت نام راننده اسنپ</li>
+      <li class="py-8"><a href="#"></a>باشگاه رانندگان</li>
+      <li class="py-8"><a href="#"></a>پنل سازمانی</li>
+      <li class="py-8"><a href="#"></a>بلاگ</li>
+
+      <!-- li tag container including menu title and dropdown box -->
+      <li class="py-8 pl-6 relative group">
+        <a href="#" class="flex justify-center items-center">
+          درباره اسنپ
+          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </a>
+
+        <!-- div container is a dropdown box inside li tag container -->
+        <div class="hidden group-hover:flex flex-col gap-4 absolute top-[80px] -left-3 border-1 border-gray-300/30 bg-white shadow-lg p-4 rounded-lg min-w-40 ">
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">فرصت های شغلی</a>
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">درباره ما</a>
+          <a href="#" class="hover:text-green-500 hover:font-iran_Bold">تماس با ما</a>
+        </div>
+      </li>
+    </ul>
+
+
+
+    <!-- snap logo with different states in different screens  -->
+    <div class="flex justify-center md:justify-end p-5 sm:p-5 md:pr-16 md:w-1/5">
+      <img src="./img/images/snappTextLogo.svg" alt="لوگوی اسنپ" class="md:min-w-20 md:max-w-20">
+    </div>
+
+  </div>
+
+
+
 </body>
 </html>
