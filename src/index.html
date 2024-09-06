@@ -1,5 +1,6 @@
 <!doctype html>
 <html dir="rtl" lang="fa">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
 </head>
 
 
-<body>
+<body class="noverflow-hidden">
 
 
   <!-- Navbar Section including 1 main container three 3 subcontainers (hamburger menu div + ul container div + snap log div) -->
@@ -27,18 +28,21 @@
 
 
     <!-- ul container that is only displayed on screens above 480px -->
-    <ul class="md:flex justify-start items-center text-center gap-5 font-iran_Light text-text_nav hidden sm:hidden md:w-4/5">
+    <ul
+      class="md:flex justify-start items-center text-center text-clamp gap-5 font-iran_Light text-text_nav hidden sm:hidden md:w-4/5">
       <!-- li tag container including menu title and dropdown box -->
       <li class="py-8 pr-6 relative group">
         <a href="#" class="flex justify-center items-center">
           سوپراپ اسنپ
-          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
           </svg>
         </a>
-        
+
         <!-- div container is a dropdown box inside li tag container -->
-        <div class="hidden group-hover:flex flex-col gap-4 absolute top-[80px] -right-3 border-1 border-gray-300/30 bg-white shadow-lg p-4 rounded-lg min-w-40 ">
+        <div
+          class="hidden group-hover:flex flex-col gap-4 absolute top-[60px] -right-3 border-1 border-gray-300/30 bg-white shadow-lg p-4 rounded-lg min-w-40 z-10">
           <a href="#" class="hover:text-green-500 hover:font-iran_Bold">درخواست تاکسی</a>
           <a href="#" class="hover:text-green-500 hover:font-iran_Bold">پیک موتوری</a>
           <a href="#" class="hover:text-green-500 hover:font-iran_Bold">سفارش آنلاین غذا</a>
@@ -64,13 +68,15 @@
       <li class="py-8 pl-6 relative group">
         <a href="#" class="flex justify-center items-center">
           درباره اسنپ
-          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
           </svg>
         </a>
 
         <!-- div container is a dropdown box inside li tag container -->
-        <div class="hidden group-hover:flex flex-col gap-4 absolute top-[80px] -left-3 border-1 border-gray-300/30 bg-white shadow-lg p-4 rounded-lg min-w-40 ">
+        <div
+          class="hidden group-hover:flex flex-col gap-4 absolute top-[60px] -left-3 border-1 border-gray-300/30 bg-white shadow-lg p-4 rounded-lg min-w-40 z-10">
           <a href="#" class="hover:text-green-500 hover:font-iran_Bold">فرصت های شغلی</a>
           <a href="#" class="hover:text-green-500 hover:font-iran_Bold">درباره ما</a>
           <a href="#" class="hover:text-green-500 hover:font-iran_Bold">تماس با ما</a>
@@ -89,5 +95,54 @@
 
 
 
+  <!-- Intro Section -->
+
+
+  <!-- .................................. -->
+  <!-- start of Intro Section including 1 main container and 2 subcontainers (right div + left div) -->
+  <div class="flex flex-col md:flex-row w-full bg-green_snap text-white">
+
+    <!-- start of right div -->
+    <div
+      class="flex justify-center items-center flex-col gap-y-6 md:min-w-[50%] md:max-w-[50%] p-5 md:pr-14 md:pl-16 md:mr-10 xl:pr-36 xl:pl-40 xl:mr-24">
+
+
+      <h1 class="font-iran_Bold text-clamp_intro">تجربه زندگی راحت تر، سریع تر و به صرفه تر با سوپراپلیکیشن اسنپ!</h1>
+
+      <p class="font-iran_Light text-clamp_des text-justify ">از درخواست خودرو گرفته تا سفارش غذا، خرید سوپرمارکتی، خرید
+        بلیط سفر، رزرو هتل و ... را میتوانید با اسنپ انجام دهید.</p>
+      <!-- this button will be hidden on screens above 840px -->
+      <button class="bg-white w-full rounded-lg p-3 font-iran_Bold text-black text-clamp md:hidden">دانلود اپلیکیشن
+        اسنپ</button>
+
+      <!-- this input and button will be displayed on screens above 840px -->
+      <div class="md:flex hidden gap-4 w-full justify-start items-center md:pl-16 2xl:pl-24">
+        <input type="text" placeholder="09xxxxx6789"
+          class="border-b-[1px] border-b-white bg-transparent placeholder-white/50 outline-none w-2/3 p-2">
+        <button class="bg-white w-1/3 rounded-lg p-3 font-iran_Bold text-[#00D170] text-clamp">ارسال لینک</button>
+      </div>
+
+      <!-- this button will be displayed on screens above 840px -->
+      <div class="md:flex hidden w-full">
+        <button
+          class="bg-transparent hover:bg-white/20 transition duration-500 w-1/2 rounded-lg p-3 font-iran_Bold text-white text-clamp border border-white ">ورود
+          به وب اپلیکیشن اسنپ</button>
+      </div>
+
+    <!-- end of right div -->
+    </div>
+
+
+    <!-- start of left div -->
+    <div class="md:flex w-full md:min-w-[50%] md:max-w-[50%] hidden">
+      <img src="./img/images/intro_desktop.jpg" alt="عکس اسلایدر بالای سایت" class="scale-x-[-1] object-cover">
+    <!-- end of right div -->
+    </div>
+
+  <!-- end of Intro Section including 1 main container and 2 subcontainers (right div + left div) -->
+  </div>
+
+
 </body>
+
 </html>
